@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "Sentiment Analysis",
+    "description": "Analyze the sentiment of a webpage's content",
+    "version": "1.0",
+    "permissions": [
+        "scripting"
+    ],
+    "host_permissions": [
+        "<all_urls>"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content.js"]
+        }
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    }
+}
